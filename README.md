@@ -14,7 +14,7 @@ To run this project, you will need the following installed:
 To get started, you can clone this repository by running the following command in your terminal:
 
 ```
-git clone https://github.com/your-username/titanic-survival-prediction.git
+git clone https://github.com/Oruchan-Asar/titanic-survival-prediction
 ```
 
 Then, navigate to the project directory by running:
@@ -35,28 +35,8 @@ The data for this project is stored in two CSV files, `train.csv` and `test.csv`
 
 To run the project, simply open the `titanic-survival-prediction.ipynb` file in Jupyter Notebook or any other IDE that supports running Python code. You can then run each cell in the notebook to load and preprocess the data, train the machine learning model, and make predictions on the test data.
 
-The final predictions will be stored in a CSV file called `predictions.csv`, which will be created in the `output` directory.
-
-## Machine Learning Models
-
-In this project, four different machine learning models were used:
-
-1.  Logistic Regression
-2.  K-Nearest Neighbors (KNN)
-3.  Decision Tree
-4.  Random Forest
-
-Each model was trained on the training set using 5-fold cross-validation and the best hyperparameters were selected using GridSearchCV. The trained models were then used to make predictions on the testing set.
-
-## Evaluation Metrics
-
-The performance of each model was evaluated using the following metrics:
-
-- Accuracy: the fraction of correctly classified passengers
-- Precision: the fraction of correctly classified survivors among all predicted survivors
-- Recall: the fraction of correctly classified survivors among all actual survivors
-- F1 Score: the harmonic mean of precision and recall
+The final predictions will be stored in a CSV file called `submission.csv`, which will be created in the same directory.
 
 ## Conclusion
 
-In conclusion, the best performing model for this dataset was Random Forest, with an accuracy of 83.77%. The feature importance plot showed that the most important features for predicting survival were the passenger class, sex, and age.
+In conclusion, the best performing model for this dataset was Random Forest, with an accuracy of 76.31%. The feature importance plot showed that the most important features for predicting survival were the passenger class, sex, and age.
